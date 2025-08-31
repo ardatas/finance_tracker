@@ -1,0 +1,107 @@
+form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #1f2937;  /* Dark blue-gray */
+    color: #eab308;             /* Electric yellow */
+
+}
+
+.header > * {
+    display: flex;
+    padding: 1em 0 1em 5em;
+    background-color: #010e21;
+}
+
+.main {
+    display: flex; 
+}
+
+.add-tr {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding: 2em 3em 3em 6em;
+}
+
+input, select, button {
+    width: 100%;
+    box-sizing: border-box;
+    /* Make them taller vertically */
+    height: 8em;           /* Fixed height */
+    width: 16em;
+    padding: 1em 1.5em;     /* Top/bottom padding makes them taller */
+    font-size: 18px;        /* Bigger text = appears taller */
+    color: #a27503;
+    outline: none; 
+}
+
+input:focus, select:focus {
+    border-color: none;
+    outline: none;  /* Remove default browser outline */
+}
+
+input::placeholder {
+    color: #a27503;             /* Electric yellow */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(9, 230, 204, 0.5);  /* Subtle shadow */
+}
+
+.tr-table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40em; 
+    min-height: 39em;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(9, 230, 204, 0.5);
+    padding: 2em;
+}
+
+.track {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em 3em 12em;
+    align-items: center;
+}
+
+.track>h2 {
+    padding-bottom: 1em; 
+}
+
+th, td {
+    padding: 8px 10px;
+    text-align: center;     /* Center align all cells */
+    width: 33.33%;          /* Equal width */
+}
+
+footer > * {
+    display: flex;
+    justify-content: center;
+    padding: 3em 0 3em 0;
+    background-color: #010e21;
+}
+
+footer a {
+    color: #eab308;          /* Your yellow color */
+    background-color: inherit; /* Inherit from parent */
+    text-decoration: underline;
+}
+
+/* Optional: hover effect */
+footer a:hover {
+    text-decoration: underline;
+    color: #fbbf24;          /* Lighter yellow on hover */
+}
